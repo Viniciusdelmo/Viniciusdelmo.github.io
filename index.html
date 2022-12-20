@@ -20,7 +20,7 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">Vinícius Delmo</a>
-            <div class="nav__menu" id="nav-menu">
+            <div class="nav__menu show-menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
                         <a href="#home" class="nav__link active-link">
@@ -56,6 +56,9 @@
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
             <div class="nav__btns">
+                <!--THEME CHANGE BUTTON-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -148,12 +151,11 @@
                             <span class="about__info-title">00+</span>
                             <span class="about__info-name">Years <br> experience</span>
                         </div>-->
-                        
-                    </div>
-                    <div class="about__buttons">
-                        <a download="" href="assets/pdf/VINICIUS DELMO - CV.pdf" class="button button--flex">
-                           Download CV <i class="uil uil-download-alt button__icon"></i>
-                        </a>
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/VINICIUS DELMO - CV.pdf" class="button button--flex">
+                               Download CV <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -163,7 +165,7 @@
                 <h2 class="section__title">Skills</h2>
                 <span class="section__subtitle">Habilidades e tecnologias que estou estudando.</span>
                 <div class="skills__container container grid">
-                    <div>
+                    
                          <!--==================== SKILLS 1 ====================-->
                         <div class="skills__content skills__open">
                             <div class="skills__header">
@@ -366,7 +368,7 @@
                 <div class="portfolio__container container swiper mySwiper">
                     <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="porfolio__content grid swiper-slide">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="./assets/img/default-image.jpg" alt="" class="portfolio__img">
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Tela de Login/Cadastro</h3>
@@ -378,7 +380,7 @@
                             </div>
                         </div>
                         <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="porfolio__content grid swiper-slide">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="./assets/img/default-image.jpg" alt="" class="portfolio__img">
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Sistema Aluguel casa</h3>
@@ -390,7 +392,7 @@
                             </div>
                         </div>
                         <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="porfolio__content grid swiper-slide">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="./assets/img/default-image.jpg" alt="" class="portfolio__img">
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Site conectado a API</h3>
@@ -488,14 +490,15 @@
                             <i class="uil uil-github-alt"></i>
                         </a>
                     </div>
-
-                    <p class="footer__copy">&#169; Vinicius Delmo. Todos os direitos reservados. </p>
                 </div>
+                <p class="footer__copy">&#169; Vinicius Delmo. Todos os direitos reservados. </p>
             </div>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
